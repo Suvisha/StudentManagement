@@ -4,7 +4,7 @@ export default class Login extends Component{
     render(){
         return(
         <div className="LoginPage">
-        <h4>registered teachers Login here</h4>
+        
             <form>
                     <label>User Name:</label>
                     <input id="userName" type="text"  placeholder="User Name"></input>
@@ -12,7 +12,7 @@ export default class Login extends Component{
                     <label>Password:</label>
                     <input id="password" type="password" placeholder="New password"></input>
                     <br/>
-                    <button value="submit" onClick={this.props.onSubmitClick}>Login</button>
+                    <button value="submit" onClick={this.props.onSubmitClick}>Login</button><h4>registered teachers Login here</h4>
             </form>
         </div>
         )
