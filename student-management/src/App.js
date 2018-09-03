@@ -17,8 +17,8 @@ class App extends Component {
     <Router>
       <div>
         <ul> 
-        <li> <Link to = "/">Home</Link></li>
-        <li> <Link to = "/Registration">Registration</Link></li>
+         <Link to = "/">Home</Link> <br/>
+         <Link to = "/Registration">Registration</Link>
         </ul>
         <switch>
         <Route exact path='/Registration' component={Registration} />

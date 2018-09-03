@@ -22,7 +22,6 @@ export default class Registration extends Component{
                     <br />
                     <button  value="submit" onClick={this.props.onSubmitClick}>Submit</button>
                 </form>
-
             </div>
         )
     }
