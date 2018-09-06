@@ -11,4 +11,8 @@ import React from 'react';
         return '';
       }
     })}
+<<<<<<< HEAD
   </div> 
+=======
+  </div>
+>>>>>>> 78246155bc8387fc8c976b6f26c345aaaa0877e5

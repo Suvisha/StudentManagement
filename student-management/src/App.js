@@ -1,4 +1,13 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
+=======
+import {BrowserRouter as Router, Link, Route} from 'react-router-dom'
+
+import Registration from './StudentManagement/Registration.js'
+//import DemoForm from './StudentManagement/FormDemo.js'
+import Login from './StudentManagement/LoginPage.js'
+//import Form from './StudentManagement/Register.js'
+>>>>>>> 78246155bc8387fc8c976b6f26c345aaaa0877e5
 import './App.css';
 import TeacherHome from './StudentManagement/TeacherHome';
 import AddNewStudent from './StudentManagement/AddNewStudent';
@@ -10,6 +19,7 @@ class App extends Component {
   {
     return(
       <div className="App">
+<<<<<<< HEAD
       <Router>
         <div>
           <Switch>
@@ -19,6 +29,22 @@ class App extends Component {
           </Switch>
         </div>
       </Router>
+=======
+      <header className="App-header">
+      <h1 className="App-title">Welcome To Student Management System</h1>
+      </header>  
+     
+      <Login></Login>
+    <Router>
+      <div>
+        <ul> 
+         <Link to = "/">Home</Link> <br/>
+         <Link to = "/Register">Registration</Link>
+        </ul>
+        <switch>
+        <Route  path='/Register' component={Registration} />
+        </switch>
+>>>>>>> 78246155bc8387fc8c976b6f26c345aaaa0877e5
       </div>
     );
   }
