@@ -1,0 +1,14 @@
+.buttonProp {
+    width: 15%;
+    background-color:maroon;
+    color: white;
+    padding: 8px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.buttonProp:hover
+{
+    background-color:mediumorchid;
+}

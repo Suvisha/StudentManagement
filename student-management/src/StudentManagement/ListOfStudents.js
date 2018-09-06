@@ -1,13 +1,14 @@
 import React from 'react';
+import EditLink from './EditLink';
+import DeleteLink from './DeleteLink';
+
 class ListOfStudents extends React.Component
 {
+     
     render()
     {
-        return(
-                <div>
-                    <h2> students List</h2>
-                   
-                </div>
+        return( 
+            <div> <EditLink> </EditLink> <DeleteLink></DeleteLink></div>
         );
     }
 }
