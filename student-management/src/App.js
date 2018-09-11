@@ -1,17 +1,14 @@
 import React, { Component } from 'react';
-<<<<<<< HEAD
-=======
-import {BrowserRouter as Router, Link, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Link, Route, Switch} from 'react-router-dom'
 
 import Registration from './StudentManagement/Registration.js'
 //import DemoForm from './StudentManagement/FormDemo.js'
 import Login from './StudentManagement/LoginPage.js'
 //import Form from './StudentManagement/Register.js'
->>>>>>> 78246155bc8387fc8c976b6f26c345aaaa0877e5
 import './App.css';
 import TeacherHome from './StudentManagement/TeacherHome';
 import AddNewStudent from './StudentManagement/AddNewStudent';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+//import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ListOfStudents from "./StudentManagement/ListOfStudents";
 
 class App extends Component {
@@ -19,7 +16,7 @@ class App extends Component {
   {
     return(
       <div className="App">
-<<<<<<< HEAD
+{/* <<<<<<< HEAD
       <Router>
         <div>
           <Switch>
@@ -29,7 +26,7 @@ class App extends Component {
           </Switch>
         </div>
       </Router>
-=======
+======= */}
       <header className="App-header">
       <h1 className="App-title">Welcome To Student Management System</h1>
       </header>  
@@ -41,10 +38,14 @@ class App extends Component {
          <Link to = "/">Home</Link> <br/>
          <Link to = "/Register">Registration</Link>
         </ul>
-        <switch>
-        <Route  path='/Register' component={Registration} />
-        </switch>
->>>>>>> 78246155bc8387fc8c976b6f26c345aaaa0877e5
+        <Switch>
+            <Route exact  path='/Register' component={Registration} />
+            <Route exact path='/TeacherHome' component={TeacherHome}/>
+            <Route exact path='/ListOfStudents' component={ListOfStudents} />
+            <Route exact path='/AddNewStudent' component={AddNewStudent} />
+        </Switch>
+      </div>
+      </Router>
       </div>
     );
   }

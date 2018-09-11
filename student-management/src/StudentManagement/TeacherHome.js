@@ -32,9 +32,7 @@ class TeacherHome extends React.Component
     handleListOfStudents()
     {  
         console.log("In  List of Student" );
-        return(
            this.props.history.push("/ListOfStudents")
-        );
     }
     handleNewStudent()
     {
