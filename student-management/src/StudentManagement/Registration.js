@@ -1,5 +1,8 @@
 import React,{Component} from 'react'
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9c97cdaf7c66bbb96fe931aba06ce0c5da369b52
 import SignUpForm from './SignUpForm'
 
 export default class Registration extends Component{

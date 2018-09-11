@@ -2,7 +2,7 @@ import React from 'react';
 import Button from "./Button";
 import Home from "./Home";
 import '../App.css';
-
+//import axios from 'axios';
 class TeacherHome extends React.Component
 {
     constructor(props)
@@ -11,6 +11,7 @@ class TeacherHome extends React.Component
       this.state={Teachername:""};
       this.handleListOfStudents=this.handleListOfStudents.bind(this);
       this.handleNewStudent=this.handleNewStudent.bind(this);
+      this.handleLogOut=this.handleLogOut.bind(this);
     }
     render()
     {
@@ -25,23 +26,30 @@ class TeacherHome extends React.Component
                 <form>
                     <Button handleOnClick={this.handleListOfStudents} buttonName="List Of Students"> </Button>
                     <Button handleOnClick={this.handleNewStudent} buttonName="Add New Students"> </Button>
+                    <Button handleOnClick={this.handleLogOut} buttonName="Log Out"> </Button>
                 </form>
             </div>
         );
     }
     handleListOfStudents()
     {  
-        console.log("In  List of Student" );
-        return(
-           this.props.history.push("/ListOfStudents")
-        );
+       
+        this.props.history.push("/ListOfStudents")
+    //    axios.get("http://localhost:8080/ListOfStudents").then(res => 
+    //    {
+    //           alert("Received Successful response from server!");
+    //     }, err => {
+    //      alert("Server rejected response with: " + err);
+    //    });
+        
     }
     handleNewStudent()
     {
-        console.log("In  Add new Student" );
-        return(
            this.props.history.push("/AddNewStudent")
-        );
+    }
+    handleLogOut()
+    {
+        this.props.history.push("/")
     }
 }
 export default TeacherHome;
