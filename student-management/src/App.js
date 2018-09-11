@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router, Link, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Link, Route,Switch} from 'react-router-dom'
 
 import Registration from './StudentManagement/Registration.js'
+import Login from './StudentManagement/LoginPage.js'
+import TeacherHome  from './StudentManagement/TeacherHome.js'
+import ListOfStudents from './StudentManagement/ListOfStudents'
 import './App.css';
 
 class App extends Component {
@@ -13,7 +16,7 @@ class App extends Component {
       <h1 className="App-title">Welcome To Student Management System</h1>
       </header>  
       <Login></Login>
-
+      
       <Router>
       <div>
         <ul> 
@@ -22,6 +25,7 @@ class App extends Component {
         </ul>
         <Switch>     
           <Route exact path='/Registration' component={Registration} />
+          <Route exact path='/ListOfStudents' component={Registration} />
         </Switch>
       </div>
     </Router>

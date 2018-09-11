@@ -1,6 +1,11 @@
 import React,{Component} from 'react';
 
 export default class Login extends Component{
+    constructor(props){
+        super(props);
+        this.onLoginClick = this.onLoginClick.bind(this);
+        this.onSignUpClick = this.onSignUpClick.bind(this);
+    }
     render()
     {
         return(
@@ -20,7 +25,7 @@ export default class Login extends Component{
     }
     onLoginClick()
     {
-        alert("in Login");
+        this.props.hi
     }
     onSignUpClick()
     {
