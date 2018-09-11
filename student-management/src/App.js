@@ -1,21 +1,11 @@
 import React, { Component } from 'react';
-<<<<<<< HEAD
+
 import {BrowserRouter as Router, Link, Route,Switch} from 'react-router-dom'
 
 import Registration from './StudentManagement/Registration.js'
 import Login from './StudentManagement/LoginPage.js'
-import TeacherHome  from './StudentManagement/TeacherHome.js'
-import ListOfStudents from './StudentManagement/ListOfStudents'
-=======
-import {BrowserRouter as Router, Route,Switch} from 'react-router-dom'
-import Registration from './StudentManagement/Registration.js'
-import Login from './StudentManagement/LoginPage'
-import TeacherHome from './StudentManagement/TeacherHome'
-import ListOfStudents from './StudentManagement/ListOfStudents'
-import AddNewStudent from './StudentManagement/AddNewStudent'
-import EditStudent from './StudentManagement/EditStudent'
-import DeleteStudent from './StudentManagement/DeleteStudent'
->>>>>>> 9c97cdaf7c66bbb96fe931aba06ce0c5da369b52
+
+
 import './App.css';
 
 class App extends Component {
@@ -23,7 +13,7 @@ class App extends Component {
   {
     return(
       <div className="App">
-<<<<<<< HEAD
+
       <header className="App-header">
       <h1 className="App-title">Welcome To Student Management System</h1>
       </header>  
@@ -41,7 +31,7 @@ class App extends Component {
         </Switch>
       </div>
     </Router>
-=======
+
         <header className="App-header">
           <h1 className="App-title">Welcome To Student Management System</h1>
         </header>  
