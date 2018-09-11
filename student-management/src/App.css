@@ -1,33 +1,30 @@
 .App {
   text-align: center;
 }
-.App-Router{
-  text-align: left
-}
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
 
 .App-header {
   background-color: #222;
-  height: 150px;
-  padding: 20px;
+  height: 70px;
+  padding: 5px;
   color: white;
 }
-
+.App-Footer
+{
+    position: fixed;
+    left: 0;
+    right:0;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    background-color:#efefef;
+    color:black;
+    text-align: center;
+    padding: 0px;
+}
 .App-title {
   font-size: 1.5em;
 }
 
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
 * {
   box-sizing: border-box;
 }
@@ -41,7 +38,7 @@
 }
 
 .label {
-  padding: 12px 12px 12px 0;
+  padding: 8px;
   display: inline;
 }
 
@@ -62,7 +59,7 @@
 .col-75 {
   float: left;
   width: 75%;
-  margin-top: 6px;
+  margin-top: 10px;
 }
 
 .right {
@@ -72,8 +69,9 @@
   padding: 10px;
 }
 .center {
-  padding: 100px 0;
+  padding: 50px 0;
   text-align: center;
+  margin-top: 10px;
 }
 @media screen and (max-width: 600px) {
   .col-25, .col-75, input[type=submit] {

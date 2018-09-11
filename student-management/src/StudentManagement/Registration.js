@@ -1,7 +1,4 @@
 import React,{Component} from 'react'
-
-import DemoForm  from './FormDemo.js'
-import Button from './Components/Button.js'
 import SignUpForm from './SignUpForm'
 
 export default class Registration extends Component{

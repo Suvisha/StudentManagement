@@ -1,6 +1,4 @@
 import React from 'react';
-import {BrowserRouter as Router, Link, Route, Switch} from 'react-router-dom'
-
 
 export default class Login extends React.Component{
     constructor(props)
@@ -18,19 +16,19 @@ export default class Login extends React.Component{
                     <label>Password:</label>
                     <input id="password" type="password" placeholder="New password"></input>
                     <br/>
-                    <button onClick={this.onLoginClick}>Login</button>
-                    <button onClick={this.onSignUpClick}>Sign Up</button>
+                    <button onClick={this.onLoginClick}>Login</button><br/><br/>
+                    <a href="/"> Home </a><br/><br/>
+                    <a href="/Registration">Registration</a>
         </div>
         )
     }
     onLoginClick()
     {
-        alert(1);
-        this.props.history.push("/ListOfStudents")
+        this.props.history.push("/TeacherHome")
         
     }
     onSignUpClick()
     {
-        alert("in SignUp");
+        this.props.history.push("/Registration")
     }
 }
