@@ -1,4 +1,5 @@
 import React,{Component} from 'react'
+
 import SignUpForm from './SignUpForm'
 
 export default class Registration extends Component{
@@ -16,7 +17,7 @@ export default class Registration extends Component{
         }
     }
 
-    validateFirstName = (First_name) =>{
+    /*validateFirstName = (First_name) =>{
        let firstNameIsValid= false
         let msg ="";
         let invalid_Length = "length should not exceed 10 letters";
@@ -33,8 +34,8 @@ export default class Registration extends Component{
             }
          }
          return msg;
-    }
-    validateLastName = (Last_name) =>{
+    }*/
+    /*validateLastName = (Last_name) =>{
         let lastNameIsValid = false;
         let msg = "";
        var isRequired = document.getElementById('lastName').required    
@@ -49,8 +50,8 @@ export default class Registration extends Component{
             }
          }
          return lastNameIsValid;
-    }
-    validatePassword = (passWord) =>{
+    }*/
+    /*validatePassword = (passWord) =>{
         let msg=""
         var isRequired = document.getElementById('pass_word').required 
         if(isRequired && passWord !==""){
@@ -61,10 +62,10 @@ export default class Registration extends Component{
                 passwordIsValid = true
                 this.setState({passWord:passWord });
             } */
-        }
+       /* }
         return msg;
             
-    }
+    }*/
     validateUserName = (user_Name) =>{
         let msg=""
         var isRequired = document.getElementById('user').required 
