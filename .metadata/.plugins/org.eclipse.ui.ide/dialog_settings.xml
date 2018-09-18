@@ -3,4 +3,6 @@
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
 		<item value="D:\Java_pgm\eclipse-workspace\studentmanage-2"/>
 	</list>
+	<section name="NewWizardAction">
+	</section>
 </section>

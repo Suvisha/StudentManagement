@@ -2,6 +2,7 @@ import React from 'react';
 import EditLink from './EditLink';
 import './Button.css'
 import Button from './Button';
+import Student from './Student';
 
 class ListOfStudents extends React.Component
 {
@@ -16,9 +17,23 @@ class ListOfStudents extends React.Component
     }
     render()
     {
+        var students = this.props.students.map(student =>
+            <Student key={student._links.self.href} student={student} />
+        );
         return( 
             <div> 
-                <EditLink> </EditLink>
+                <table>
+				<tbody>
+					<tr>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Description</th>
+						<th></th>
+					</tr>
+                    {students}
+                    <EditLink> </EditLink>
+				</tbody>
+			</table>   
                 <Button buttonName="Back" handleOnClick={this.handleBack}/>
             </div>
         );

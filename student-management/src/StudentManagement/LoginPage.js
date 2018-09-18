@@ -1,18 +1,10 @@
 import React from 'react';
 
-<<<<<<< HEAD
-export default class Login extends Component{
-    constructor(props){
-        super(props);
-        this.onLoginClick = this.onLoginClick.bind(this);
-        this.onSignUpClick = this.onSignUpClick.bind(this);
-=======
 export default class Login extends React.Component{
     constructor(props)
     {
       super(props);
       this.onLoginClick=this.onLoginClick.bind(this);
->>>>>>> 9c97cdaf7c66bbb96fe931aba06ce0c5da369b52
     }
     render()
     {
@@ -32,12 +24,8 @@ export default class Login extends React.Component{
     }
     onLoginClick()
     {
-<<<<<<< HEAD
-        this.props.hi
-=======
         this.props.history.push("/TeacherHome")
         
->>>>>>> 9c97cdaf7c66bbb96fe931aba06ce0c5da369b52
     }
     onSignUpClick()
     {
