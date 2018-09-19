@@ -26,9 +26,5 @@ export default class Login extends React.Component{
     {
         this.props.history.push("/TeacherHome")
         
-    }
-    onSignUpClick()
-    {
-        this.props.history.push("/Registration")
-    }
+    } 
 }

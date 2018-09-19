@@ -7,6 +7,7 @@ import ListOfStudents from './StudentManagement/ListOfStudents';
 import EditStudent from './StudentManagement/EditStudent'
 import DeleteStudent from './StudentManagement/DeleteStudent'
 import AddNewStudent from './StudentManagement/AddNewStudent'
+import client from './client'
 import './App.css';
 
 class App extends Component {
@@ -21,8 +22,7 @@ class App extends Component {
     this.setState({isLoading: true});
   }
   componentWillMount() 
-  {
-  }
+ {}
   render() 
   {
     return(
