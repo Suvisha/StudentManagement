@@ -32,16 +32,8 @@ class TeacherHome extends React.Component
         );
     }
     handleListOfStudents()
-    {  
-       
+    {       
         this.props.history.push("/ListOfStudents")
-    //    axios.get("http://localhost:8080/ListOfStudents").then(res => 
-    //    {
-    //           alert("Received Successful response from server!");
-    //     }, err => {
-    //      alert("Server rejected response with: " + err);
-    //    });
-        
     }
     handleNewStudent()
     {
